@@ -74,9 +74,4 @@
   - name: Load master data of the list of products
     ansible.builtin.command: mongosh --host 3.236.84.126 </app/db/master-data.js
     remote_src: yes
-
-
-
-    
   
-
