@@ -70,7 +70,9 @@
     ansible.builtin.dnf:
       name: mongodb-mongosh
       state: present
-      
+  
+  - name: Load master data of the list of products
+    ansible.builtin.command: mongosh --host 3.236.84.126 </app/db/master-data.js
 
 
 
