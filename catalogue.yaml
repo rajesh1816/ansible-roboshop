@@ -61,7 +61,7 @@
       state: started
       enabled: yes
   
-  - name: copying catalogue service file systemctl
+  - name: copying mongo repo for clinet installation
     ansible.builtin.copy:
       src: mongo.repo
       dest: /etc/yum.repos.d/mongo.repo
@@ -73,6 +73,7 @@
   
   - name: Load master data of the list of products
     ansible.builtin.command: mongosh --host 3.236.84.126 </app/db/master-data.js
+    remote_src: yes
 
 
 
