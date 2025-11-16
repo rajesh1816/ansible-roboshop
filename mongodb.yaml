@@ -1,6 +1,6 @@
 #!/bin/bash
 
-- name: installing mongodb on the server
+- name: configuring mongodb on the server
   hosts: mongodb
   become: yes
   tasks:
