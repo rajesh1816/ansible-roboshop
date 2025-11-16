@@ -22,7 +22,7 @@
 
   - name: creating system user
     ansible.builtin.user:
-      name: roboshop system user
+      name: roboshop 
       state: present
       system: yes # This parameter makes it a system user
       shell: /sbin/nologin # Typically, system users do not have login shells
