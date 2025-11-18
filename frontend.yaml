@@ -22,8 +22,6 @@
       enabled: yes
 
   - name: Remove the html directory #delete the html directory
-    tag:
-      - remove
     ansible.builtin.file:
       path: /usr/share/nginx/html
       state: absent
